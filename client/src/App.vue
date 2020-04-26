@@ -1,12 +1,13 @@
 <template>
   <div id="app">
     <sv-header></sv-header>
-    <hello-world :msg="estado"></hello-world>
+    <!-- <hello-world :msg="estado"></hello-world> -->
+    <container></container>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import container from './components/container'
 import SvHeader from '@/components/SvHeader'
 
 export default {
@@ -17,8 +18,8 @@ export default {
     }
   },
   components: {
-    HelloWorld,
-    SvHeader
+    SvHeader,
+    container
   }
 }
 </script>

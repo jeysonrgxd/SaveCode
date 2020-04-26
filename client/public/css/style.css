@@ -7,8 +7,12 @@
    /* colores */
    --primero :#222831;
    --segundo:#393e46;
-   --tercero:#00adb5
+   --tercero:#00adb5;
 
+}
+
+html, body{
+   background-color: var(--segundo);
 }
 
 /* clases genericas */
