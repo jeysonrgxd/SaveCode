@@ -1,12 +1,16 @@
 <template>
-   <div class="sv-btnadd">
-      <a href="/addscript" class="sv-btnadd__link"><span class="sv-btnadd__icon"><i class="fas fa-plus"></i></span> Agregar</a>
+   <div class="sv-btnadds">
+      <a :href="link" class="sv-btnadds__link"><span class="sv-btnadds__icon"><i class="fas fa-plus"></i></span> {{ name }}</a>
    </div>
 </template>
 
 <script>
 export default {
-   name:"ButtonAdd",
+   name:"ButtonAdds",
+   props:{
+      name:{type:String},
+      link:{type:String,default:"/"}
+   },
    data(){
       return{
 
@@ -16,10 +20,10 @@ export default {
 </script>
 
 <style scoped>
-   .sv-btnadd{
+   .sv-btnadds{
       margin: 0 5px;
    }
-   .sv-btnadd__link{
+   .sv-btnadds__link{
       color: #fff;
       text-decoration: none;
       font-family: var(--roboto);

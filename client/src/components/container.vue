@@ -3,8 +3,8 @@
       <div class="sv-contenedor__propiedades">
          <button-search></button-search>
          <div class="sv-contenedor__buttons">
-            <button-add></button-add>
-            <button-new-category></button-new-category>
+            <button-adds name="Agregar script  " link="/newadd"></button-adds>
+            <button-adds name="Agregar Category" link="/newcategory"></button-adds>
          </div>
       </div>
 
@@ -13,20 +13,18 @@
 
 <script>
 import ButtonSearch from '@/components/ButtonSearch.vue'
-import ButtonAdd from '@/components/ButtonAdd.vue'
-import ButtonNewCategory from '@/components/ButtonNewCategory.vue'
+import ButtonAdds from '@/components/ButtonAdds.vue'
 
 export default {
    name:"container",
    data(){
       return{
-
+         
       }
    },
    components:{
       ButtonSearch,
-      ButtonAdd,
-      ButtonNewCategory
+      ButtonAdds
    }
 
 }
@@ -44,6 +42,6 @@ export default {
    }
    .sv-contenedor__buttons{
       display: flex;
-      
+
    }
 </style>
