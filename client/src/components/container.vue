@@ -3,7 +3,7 @@
       <div class="sv-contenedor__propiedades">
          <button-search></button-search>
          <div class="sv-contenedor__buttons">
-            <button-adds name="Agregar script  " link="/newadd"></button-adds>
+            <button-adds name="Agregar script" link="/newadd"></button-adds>
             <button-adds name="Agregar Category" link="/newcategory"></button-adds>
          </div>
       </div>
