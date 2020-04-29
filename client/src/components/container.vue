@@ -2,7 +2,10 @@
    <div class="sv-contenedor">
       <div class="sv-contenedor__propiedades">
          <button-search></button-search>
-         <button-add></button-add>
+         <div class="sv-contenedor__buttons">
+            <button-add></button-add>
+            <button-new-category></button-new-category>
+         </div>
       </div>
 
    </div>
@@ -11,6 +14,7 @@
 <script>
 import ButtonSearch from '@/components/ButtonSearch.vue'
 import ButtonAdd from '@/components/ButtonAdd.vue'
+import ButtonNewCategory from '@/components/ButtonNewCategory.vue'
 
 export default {
    name:"container",
@@ -21,10 +25,9 @@ export default {
    },
    components:{
       ButtonSearch,
-      ButtonAdd
+      ButtonAdd,
+      ButtonNewCategory
    }
-
-   
 
 }
 </script>
@@ -38,5 +41,9 @@ export default {
       display: flex;
       align-items: center;
       justify-content: space-between;
+   }
+   .sv-contenedor__buttons{
+      display: flex;
+      
    }
 </style>

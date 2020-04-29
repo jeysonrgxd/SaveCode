@@ -1,30 +1,26 @@
 <template>
-   <div class="sv-btnadd">
-      <a href="/addscript" class="sv-btnadd__link"><span class="sv-btnadd__icon"><i class="fas fa-plus"></i></span> Agregar</a>
+   <div class="sv-btncategory">
+      <a href="/newcategory" class="sv-btncategory__link"><span class="sv-btncategory__icon"><i class="fas fa-plus"></i></span> New Category</a>
    </div>
 </template>
 
 <script>
 export default {
-   name:"ButtonAdd",
-   data(){
-      return{
-
-      }
-   }
+   
 }
 </script>
 
 <style scoped>
-   .sv-btnadd{
+   .sv-btncategory{
       margin: 0 5px;
    }
-   .sv-btnadd__link{
+   .sv-btncategory__link{
       color: #fff;
       text-decoration: none;
       font-family: var(--roboto);
       padding: 10px;
       background-color: var(--tercero);
       border-radius: 4px;
+   
    }
 </style>
