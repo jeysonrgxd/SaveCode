@@ -7,7 +7,6 @@
             <button-adds name="Agregar Category" link="/newcategory"></button-adds>
          </div>
       </div>
-
    </div>
 </template>
 
