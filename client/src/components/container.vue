@@ -7,12 +7,16 @@
             <button-adds name="Agregar Category" link="/newcategory"></button-adds>
          </div>
       </div>
+      <div class="sv-contenedor__tags">
+         <tags></tags>  
+      </div>
    </div>
 </template>
 
 <script>
 import ButtonSearch from '@/components/ButtonSearch.vue'
 import ButtonAdds from '@/components/ButtonAdds.vue'
+import Tags from '@/components/Tags.vue'
 
 export default {
    name:"container",
@@ -23,14 +27,15 @@ export default {
    },
    components:{
       ButtonSearch,
-      ButtonAdds
+      ButtonAdds,
+      Tags
    }
 
 }
 </script>
 <style scoped>
    .sv-contenedor{
-      width: 1500px;
+      max-width: 1500px;
       margin:0 auto;
       padding:30px 0;
    }
@@ -42,5 +47,8 @@ export default {
    .sv-contenedor__buttons{
       display: flex;
 
+   }
+   .sv-contenedor__tags{
+      padding:30px 0;
    }
 </style>

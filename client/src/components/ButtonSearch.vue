@@ -9,7 +9,7 @@ export default {
    name:"ButtonSearch",
    data(){ 
       return{
-         place:"Buscar..",
+         place:"Buscar..", 
          filter:""
       }
    }
