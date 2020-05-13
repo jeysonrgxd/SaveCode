@@ -13,7 +13,7 @@
 export default {
    name:"Tags",
 
-   //recordar que es el componente container quien no enviara los datos que traera de una api y los pondra en la tabla supuestamente
+   //recordar que es el componente container quien nos enviara los datos que traera de una api y los pondra en la tabla supuestamente
    props:{
       arrtag:{
          type:Array,

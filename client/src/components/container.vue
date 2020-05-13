@@ -10,6 +10,9 @@
       <div class="sv-contenedor__tags">
          <tags></tags>  
       </div>
+      <div class="sv-contenedor__data">
+         <sv-assets-table></sv-assets-table>
+      </div>
    </div>
 </template>
 
@@ -17,6 +20,7 @@
 import ButtonSearch from '@/components/ButtonSearch.vue'
 import ButtonAdds from '@/components/ButtonAdds.vue'
 import Tags from '@/components/Tags.vue'
+import SvAssetsTable from '@/components/SvAssetsTable.vue'
 
 export default {
    name:"container",
@@ -28,7 +32,8 @@ export default {
    components:{
       ButtonSearch,
       ButtonAdds,
-      Tags
+      Tags,
+      SvAssetsTable
    }
 
 }
@@ -50,5 +55,8 @@ export default {
    }
    .sv-contenedor__tags{
       padding:30px 0;
+   }
+   .sv-contenedor__data{
+      padding: 20px;
    }
 </style>
